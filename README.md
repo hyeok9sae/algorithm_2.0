@@ -1,2 +1,2 @@
-# algorithm_2022
-✔ Problem Solving 2022
+# algorithm_2.0
+✔ Problem Solving
