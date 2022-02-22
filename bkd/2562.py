@@ -1,6 +1,3 @@
-import re
-
-
 lst = []
 for i in range(1, 10):
     number = int(input())
