@@ -14,7 +14,7 @@ for _ in range(N):
                 stack.append(s)
         elif s == 'B':
             if stack[-1] == 'B':
-                stack.pop()
+                stack.pop() 
             else:
                 stack.append(s)
     if not stack:
