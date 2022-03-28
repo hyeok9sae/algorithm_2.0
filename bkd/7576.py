@@ -14,9 +14,10 @@ def is_in(ny, nx):
 
 def bfs(lst):
     deq = deque()
+    count = 0
     for row, col in lst:
         visited[row][col] = True
-        deq.append((row, col, 0))
+        deq.append((row, col, count))
     while deq:
         y, x, count = deq.popleft()
         for i in range(4):
@@ -44,7 +45,6 @@ for i in range(N):
         if matrix[i][j] == 1 and not visited[i][j]:
             lst.append((i, j))
 answer = bfs(lst)
-print(*matrix, sep="\n")
 if chk_ripe():
     print(answer)
 else:
