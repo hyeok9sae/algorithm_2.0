@@ -29,7 +29,6 @@ for _ in range(K):
     x1, y1, x2, y2 = map(int, input().split())
     for i in range(x1, x2):
         for j in range(y1, y2):
-            print(i, j)
             matrix[j][i] = 1
 visited = [[False]*N for _ in range(M)]
 dy, dx = (0, -1, 0, 1), (-1, 0, 1, 0)
